@@ -1,0 +1,41 @@
+stages:
+  - validate
+  - plan
+  - apply
+
+default:
+  image:
+    name: hashicorp/terraform:latest
+    entrypoint:
+      - /usr/bin/env
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+  before_script:
+    - terraform init
+  cache:
+    key: terraform
+    paths:
+      - .terraform
+
+terraform_validate:
+  stage: validate
+  script:
+    - terraform validate
+
+terraform_plan:
+  stage: plan
+  script: 
+    - terraform plan -var-file="variables.tfvars" --out plan
+  artifacts:
+    paths:
+      - plan
+
+terraform_apply:
+  stage: apply
+  script:
+    - terraform apply --auto-approve plan
+  when: manual
+  allow_failure: false
+  only:
+    refs:
+      - main
