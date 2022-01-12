@@ -37,7 +37,7 @@ resource "azurerm_resource_group" "rg2" {
   location = var.location2
 }
 resource "azurerm_virtual_network" "vnet1" {
-  name                = "${local.prefix}-network"
+  name                = "${var.prefix}-network"
   address_space       = ["10.0.0.0/16"]
   location            = azurerm_resource_group.rg1.location
   resource_group_name = azurerm_resource_group.rg1.name
@@ -51,7 +51,7 @@ resource "azurerm_subnet" "subnet1" {
 }
 
 resource "azurerm_virtual_network" "vnet2" {
-  name                = "${local.prefix}-network"
+  name                = "${var.prefix}-network"
   address_space       = ["10.0.0.0/16"]
   location            = azurerm_resource_group.rg2.location
   resource_group_name = azurerm_resource_group.rg2.name
