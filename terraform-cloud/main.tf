@@ -74,6 +74,6 @@ module "virtual_machines" {
   vm_size   = each.value.size
   rg_name   = each.value.resource_group
   subnet_id = each.value.subnet_id
-  prefix    = local.prefix
+  prefix    = main.prefix
 
 }
