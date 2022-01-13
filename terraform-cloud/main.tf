@@ -9,21 +9,6 @@ locals {
     "vm3" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
     "vm4" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
     "vm5" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
-    "vm6" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
-    "vm7" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
-    "vm8" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
-    "vm9" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
-    "vm10" = { size = var.vm_size1, location = var.location1, resource_group = local.rg1, subnet_id = local.subnet1_id },
-    "vm11" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm12" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm13" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm14" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm15" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm16" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm17" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm18" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm19" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id },
-    "vm20" = { size = var.vm_size2, location = var.location2, resource_group = local.rg2, subnet_id = local.subnet2_id }
   }
 }
 
