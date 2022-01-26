@@ -1,0 +1,151 @@
+[
+    {
+        "name": "DEV.Sitecore.Core",
+        "scripts": [
+            "CreateUser.Core.sql",
+            "SetSitecoreAdminPassword.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Core.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Master",
+        "scripts": [
+            "CreateUser.Master.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Master.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Web",
+        "scripts": [
+            "CreateUser.Web.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Web.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Experienceforms",
+        "scripts": [
+            "CreateUser.ExperienceForms.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Experienceforms.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Exm.master",
+        "scripts": [
+            "CreateUser.ExmMaster.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Exm.master.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Marketingautomation",
+        "scripts": [
+            "CreateUser.MarketingAutomation.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Marketingautomation.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Processing.Tasks",
+        "scripts": [
+            "CreateUser.ProcessingTasks.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Processing.tasks.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Processing.Pools",
+        "scripts": [
+            "CreateUser.ProcessingPools.sql"
+        ],
+        "dacpacs": [
+            "collectiondeployment\\Sitecore.Processing.pools.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Referencedata",
+        "scripts": [
+            "CreateUser.ReferenceData.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Referencedata.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Processing.Engine.Tasks",
+        "scripts": [
+            "createuser_text_processingenginetasks.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Processing.Engine.Tasks.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Processing.Engine.Storage",
+        "scripts": [
+            "createuser_text_processingenginestorage.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Processing.Engine.Storage.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Reporting",
+        "scripts": [
+            "createuser_text_reporting.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Reporting.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Messaging",
+        "scripts": [
+            "createuser_text_messaging.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Messaging.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Xdb.Collection.ShardMapManager",
+        "scripts": [
+            "collectiondeployment\\CreateShardApplicationDatabaseServerLogin.sql",
+            "collectiondeployment\\CreateShardManagerApplicationDatabaseUser.sql",
+            "smm_azure.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Xdb.Collection.Database.Sql.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Xdb.Collection.Shard0",
+        "scripts": [
+            "collectiondeployment\\CreateShardApplicationDatabaseUser.sql",
+            "shard0_azure.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Xdb.Collection.Shard0.dacpac"
+        ]
+    },
+    {
+        "name": "DEV.Sitecore.Xdb.Collection.Shard1",
+        "scripts": [
+            "collectiondeployment\\CreateShardApplicationDatabaseUser.sql",
+            "shard1_azure.sql"
+        ],
+        "dacpacs": [
+            "Sitecore.Xdb.Collection.Shard1.dacpac"
+        ]
+    }
+]
